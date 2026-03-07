@@ -1,18 +1,31 @@
-## Getting Started
+# 4 pilar *Object Oriented Programming* (OOP)
+4 pilar pada OOP merupakan dasar dalam pengembangan *software* yang diciptakan untuk membantu menulis kode yang tampak bersih (*clean code*):
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### 1. Enkapsulasi (Encapsulation)
 
-## Folder Structure
+**Enkapsulasi** adalah cara kita membungkus data (variabel) dan metode (fungsi) menjadi satu unit tunggal yang disebut **Class**. Tujuannya adalah untuk menyembunyikan detail internal dari dunia luar.
 
-The workspace contains two folders by default, where:
+* **Intinya:** "Jangan sentuh isi dalam saya sembarangan."
+* **Contoh:** Seperti sebuah kapsul obat. Kamu hanya perlu menelan kapsulnya tanpa perlu tahu detail kimia di dalamnya. Kamu berinteraksi dengan objek hanya melalui "pintu" (metode) yang sudah disediakan.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### 2. Abstraksi (Abstraction)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+**Abstraksi** adalah teknik untuk menyembunyikan detail implementasi yang rumit dan hanya menampilkan fungsi-fungsi pentingnya saja kepada pengguna.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+* **Intinya:** "Tahu cara pakainya, bukan cara kerjanya."
+* **Contoh:** Saat kamu menyetir mobil, kamu hanya perlu tahu cara menginjak pedal gas dan rem. Kamu tidak perlu tahu bagaimana sistem pembakaran mesin bekerja di bawah kap setiap kali kamu menekan pedal.
 
-## Dependency Management
+### 3. Pewarisan (Inheritance)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+**Inheritance** memungkinkan sebuah Class (disebut *Child Class*) untuk mewarisi sifat, atribut, dan perilaku dari Class lain (disebut *Parent Class*). Ini sangat berguna untuk mencegah penulisan kode yang berulang.
+
+* **Intinya:** "Apa yang bapak punya, anak juga punya."
+* **Contoh:** Jika kita punya Class **Hewan**, maka Class **Kucing** dan **Anjing** bisa mewarisi sifat "Bernapas" dan "Makan" dari Class Hewan, tapi tetap bisa punya sifat uniknya sendiri seperti "Mengeong" atau "Menggonggong".
+
+### 4. Polimorfisme (Polymorphism)
+
+**Polimorfisme** berasal dari bahasa Yunani yang berarti "banyak bentuk". Ini memungkinkan satu metode atau fungsi memiliki perilaku yang berbeda-beda tergantung pada objek yang memanggilnya.
+
+* **Intinya:** "Satu perintah, banyak cara melakukan."
+* **Contoh:** Bayangkan perintah "Bersuara". Jika diberikan kepada Kucing, ia akan "Meong". Jika diberikan kepada Anjing, ia akan "Guk". Perintahnya sama, tapi hasilnya berbeda sesuai identitas objeknya.
+
