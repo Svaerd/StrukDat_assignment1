@@ -5,8 +5,39 @@
 
 **Enkapsulasi** adalah cara kita membungkus data (variabel) dan metode (fungsi) menjadi satu unit tunggal yang disebut **Class**. Tujuannya adalah untuk menyembunyikan detail internal dari dunia luar.
 
-* **Intinya:** "Jangan sentuh isi dalam saya sembarangan."
+* **Intinya:** "Jangan sentuh isi dalam kotak ini sembarangan. Izin dulu jika ingin mengakses (set & get)."
 * **Contoh:** Seperti sebuah kapsul obat. Kamu hanya perlu menelan kapsulnya tanpa perlu tahu detail kimia di dalamnya. Kamu berinteraksi dengan objek hanya melalui "pintu" (metode) yang sudah disediakan.
+
+```java
+public class Car {
+  private String brand;
+  private String color;
+  private String type;
+  private int speed;
+ 
+
+  public void setSpeed(int speed) {
+	  this.speed = Math.max(0, speed); // Prevent negative
+  } 
+  
+  public String getBrand() {
+    return brand;
+  }
+
+  public String getColor() {
+    return color;
+  }
+
+  public String getType() {
+    return type;
+  }
+
+  public int getSpeed() {
+    return speed;
+  }
+ 
+}
+```
 
 ### 2. Abstraksi (Abstraction)
 

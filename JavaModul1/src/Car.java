@@ -1,13 +1,38 @@
 
 public class Car {
+  public Car() {
+  }
+
+  // ----
+  // Encapsulation
+  // ----
+
+  // Hide atribute from outside
   private String brand;
   private String color;
   private String type;
   private int speed;
 
-  public Car() {
+  // set and get
+  public void setSpeed(int speed) {
+    this.speed = Math.max(0, speed); // Prevent negative
   }
 
+  public String getBrand() {
+    return brand;
+  }
+
+  public String getColor() {
+    return color;
+  }
+
+  public String getType() {
+    return type;
+  }
+
+  public int getSpeed() {
+    return speed;
+  }
   public Car(String brand, String color, String type, int speed) {
     this.brand = brand;
     this.color = color;
@@ -18,7 +43,4 @@ public class Car {
   public void accelerate(int speedIncrease) {
   }
 
-  public String getBrand() {
-    return brand;
-  }
 }
