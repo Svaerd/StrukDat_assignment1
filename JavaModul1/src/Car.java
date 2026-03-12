@@ -33,6 +33,46 @@ public class Car {
   public int getSpeed() {
     return speed;
   }
+
+  // -----
+  // Abstraction
+  // -----
+
+  // No Abstraction
+  public void startEngine() {
+    System.out.println("Engine Starting");
+  }
+
+  public void injectFuel() {
+  }
+
+  public void igniteSpark() {
+  }
+
+  public void rotatePistons() {
+  }
+
+  // With Abstraction
+  public void start() {
+    startEngineAbstract();
+    injectFuelAbstract();
+    igniteSparkAbstract();
+    rotatePistonsAbstract();
+  }
+
+  private void startEngineAbstract() {
+    System.out.println("Engine Starting with Abstraction");
+  }
+
+  private void injectFuelAbstract() {
+  }
+
+  private void igniteSparkAbstract() {
+  }
+
+  private void rotatePistonsAbstract() {
+  }
+
   public Car(String brand, String color, String type, int speed) {
     this.brand = brand;
     this.color = color;
